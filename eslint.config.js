@@ -35,4 +35,16 @@ export default [
       ],
     },
   },
+  {
+    files: ['**/*.test.{js,jsx}', 'setupTests.js'],
+    languageOptions: {
+      globals: globals.jest,
+    },
+  },
+  {
+    files: ['__mocks__/**/*.js'],
+    languageOptions: {
+      globals: globals.node,
+    },
+  },
 ]
